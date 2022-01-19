@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista de tareas">
+    <meta name="author" content="Rober Baca" />
+  
+      <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet"/>
+    
+    <!-- Font Awesome Script -->
+    <script defer src="fontawesome-free-5.15.4-web/js/all.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>ToDo List</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
+
+    <div class ="formContainer">
+        <form action="" class = "form" >           
+
+            <input class = "inputBox" type="text" id = "inputBox" maxlength="35" autocomplete="off" autocorrect="off" spellcheck="false">               
+            
+            <div class = "buttonContainer">
+                <button class="toDoButton" id = "toDoButton" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </div>
+
+            <div class="select">
+                <select name="all" class="filterToDo" id = "filterToDo">
+                    <i class="fas fa-caret-square-down"></i>
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+
+        </form>     
+    </div>
+
+    <div class ="pendingTask" id = "pendingTask">
+        <p id = "pending"></p>                
+    </div>
+    
+     
+<div class = "listContainer">
+    <ul class = "toDoListContainer"  id = "toDoList"></ul>           
+</div>          
+             
+
+<script src = "index.js"></script>
+
+</main>
+
+</body>
+
+<footer class = "footer">
+	<p>Created by Rober Baca</p>
+	<a class = "socialIcon" target="_blank" href="https://github.com/roberbaca"><i class="fab fa-github-square fa-2x"></i></a>
+    <a class = "socialIcon" target="_blank" href="https://www.linkedin.com/in/roberto-baca"><i class="fab fa-linkedin fa-2x"></i></a>
+	
+</footer>
+
+</html>
